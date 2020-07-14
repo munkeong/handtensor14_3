@@ -5,6 +5,7 @@
 #MAINTAINER  jeon
 
 FROM python:3.6.8
+USER root
 
 RUN mkdir /src
 WORKDIR /src
