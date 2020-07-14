@@ -4,7 +4,7 @@
 #USER root
 #MAINTAINER  jeon
 
-FROM python:3.6
+FROM python:3.6.8
 
 RUN mkdir /src
 WORKDIR /src
