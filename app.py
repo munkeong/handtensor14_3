@@ -4,9 +4,9 @@ from flask import Flask, request, Response, render_template
 import cv2
 import sys
 import io
-#new_lib = './'
-#if not new_lib in os.environ['LD_LIBRARY_PATH']:
-#    os.environ['LD_LIBRARY_PATH'] += ':'+new_lib
+new_lib = './'
+if not new_lib in os.environ['LD_LIBRARY_PATH']:
+    os.environ['LD_LIBRARY_PATH'] += ':'+new_lib
 #    try:
 #        os.execv(sys.argv[0], sys.argv)
 #    except ImportError:
