@@ -9,7 +9,7 @@ if not new_lib in os.environ['LD_LIBRARY_PATH']:
     os.environ['LD_LIBRARY_PATH'] += ':'+new_lib
     try:
         os.execv(sys.argv[0], sys.argv)
-    except Exception as e:
+    except ImportError:
         sys.exit('EXCEPTION: Failed to Execute under modified environment, '+e)
 	
 
